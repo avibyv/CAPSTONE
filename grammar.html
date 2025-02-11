@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grammar Lessons</title>
+  <link rel="stylesheet" href="CAPSTONE.css">
+</head>
+<body>
+  <header>
+    <h1>Grammar Lessons</h1>
+      <p>Master English grammar rules and write with confidence!</p>
+  </header>
+
+  <div class="lesson-container">
+
+    <h2 onclick="toggleLesson(1)">Lesson 1: Parts of Speech</h2>
+    <div id="lesson1" class="lesson-content">
+      
+      <audio controls>
+        <source src="audio/lesson1.mp3" type="audio/mpeg">
+      </audio>
+
+      <p>Understanding parts of speech is the foundation of grammar. These are the different categories of words that we use to build sentences. Let's break them down:</p>
+        <ul>
+          <li><strong>Nouns:</strong> A noun is a word that represents a person, place, thing, or idea.
+           <ul>
+             <li><em>Examples: dog, city, love, happiness</em></li>
+           </ul>
+          </li>
+        </ul>
+
+      <!-- Quiz for Lesson 1 -->
+       <button onclick="toggleQuiz(1)">Start Quiz</button>
+      <div id="quiz1" class="quiz">
+        <h3 class="quiz-title">Quiz: Parts of Speech</h3>
+        <div class="quiz-question">
+          <p>1. Which of the following is a noun?</p>
+          <input type="radio" name="q1" value="wrong"> Run<br>
+          <input type="radio" name="q1" value="correct"> Dog<br>
+          <input type="radio" name="q1" value="wrong"> Quickly<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. What part of speech describes an action?</p>
+          <input type="radio" name="q2" value="correct"> Verb<br>
+          <input type="radio" name="q2" value="wrong"> Adjective<br>
+          <input type="radio" name="q2" value="wrong"> Noun<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. Which part of speech describes a noun?</p>
+          <input type="radio" name="q3" value="wrong"> Verb<br>
+          <input type="radio" name="q3" value="correct"> Adjective<br>
+          <input type="radio" name="q3" value="wrong"> Preposition<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. Which of these is an example of an adjective?</p>
+          <input type="radio" name="q4" value="correct"> Beautiful<br>
+          <input type="radio" name="q4" value="wrong"> Run<br>
+          <input type="radio" name="q4" value="wrong"> Table<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. Identify the pronoun in this sentence: "She loves ice cream."</p>
+          <input type="radio" name="q5" value="correct"> She<br>
+          <input type="radio" name="q5" value="wrong"> Loves<br>
+          <input type="radio" name="q5" value="wrong"> Ice cream<br>
+        </div>
+        <button onclick="checkQuiz(1)">Submit Quiz</button>
+        <p id="quizResult1" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(2)">Lesson 2: Subject-Verb Agreement</h2>
+    <div id="lesson2" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson1.mp3" type="audio/mpeg">
+      </audio>
+      <p>Subject-verb agreement means that the subject and verb in a sentence must agree in number. If the subject is singular, the verb must be singular; if the subject is plural, the verb must be plural.</p>
+      <ul>
+        <li><em>She runs every day.</em> (Singular subject "She" and singular verb "runs")</li>
+      </ul>
+
+      <!-- Quiz for Lesson 2 -->
+       <button onclick="toggleQuiz(2)">Start Quiz</button>
+      <div id="quiz2" class="quiz">
+        <h3 class="quiz-title">Quiz: Subject-Verb Agreement</h3>
+        <div class="quiz-question">
+          <p>1. Which sentence is correct?</p>
+          <input type="radio" name="q6" value="correct"> She runs every morning.<br>
+          <input type="radio" name="q6" value="wrong"> She run every morning.<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. Which verb agrees with the subject "They"?</p>
+          <input type="radio" name="q7" value="wrong"> Eats<br>
+          <input type="radio" name="q7" value="correct"> Eat<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. Choose the correct form: "The dog ___ loudly."</p>
+          <input type="radio" name="q8" value="correct"> Barks<br>
+          <input type="radio" name="q8" value="wrong"> Bark<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. Which form is correct: "The children ___ playing outside."</p>
+          <input type="radio" name="q9" value="correct"> Are<br>
+          <input type="radio" name="q9" value="wrong"> Is<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. Choose the sentence with correct subject-verb agreement:</p>
+          <input type="radio" name="q10" value="correct"> The cat sleeps on the couch.<br>
+          <input type="radio" name="q10" value="wrong"> The cat sleep on the couch.<br>
+        </div>
+        <button onclick="checkQuiz(2)">Submit Quiz</button>
+        <p id="quizResult2" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(3)">Lesson 3: Tenses</h2>
+    <div id="lesson3" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson1.mp3" type="audio/mpeg">
+      </audio>
+      <p>Tenses indicate when an action takes place. There are three main tenses in English: present, past, and future. Each tense has different forms to show the action’s time frame.</p>
+      
+      <!-- Quiz for Lesson 3 -->
+       <button onclick="toggleQuiz(3)">Start Quiz</button>
+      <div id="quiz3" class="quiz">
+        <h3 class="quiz-title">Quiz: Tenses</h3>
+        <div class="quiz-question">
+          <p>1. Which tense is this sentence: "She is cooking dinner."?</p>
+          <input type="radio" name="q11" value="wrong"> Past<br>
+          <input type="radio" name="q11" value="correct"> Present<br>
+          <input type="radio" name="q11" value="wrong"> Future<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. Choose the correct verb form for past tense: "They ___ the movie."</p>
+          <input type="radio" name="q12" value="correct"> Watched<br>
+          <input type="radio" name="q12" value="wrong"> Watch<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. Identify the tense: "She will visit next week."</p>
+          <input type="radio" name="q13" value="wrong"> Past<br>
+          <input type="radio" name="q13" value="wrong"> Present<br>
+          <input type="radio" name="q13" value="correct"> Future<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. What tense is the following sentence in? "They had already eaten by the time she arrived."</p>
+          <input type="radio" name="q14" value="correct"> Past Perfect<br>
+          <input type="radio" name="q14" value="wrong"> Present<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. Choose the correct future tense form: "We ___ meet tomorrow."</p>
+          <input type="radio" name="q15" value="correct"> Will<br>
+          <input type="radio" name="q15" value="wrong"> Had<br>
+        </div>
+        <button onclick="checkQuiz(3)">Submit Quiz</button>
+        <p id="quizResult3" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+<!-- Lesson 4: Conditional Sentences -->
+<div class="lesson-container">
+  <h2 onclick="toggleLesson(4)">Lesson 4: Conditional Sentences</h2>
+  <div id="lesson4" class="lesson-content">
+    <audio controls>
+      <source src="audio/lesson4.mp3" type="audio/mpeg">
+    </audio>
+    <p>Conditional sentences express situations and their possible outcomes. There are four types: zero, first, second, and third conditionals.</p>
+    <ul>
+      <li><strong>Zero Conditional:</strong> Used for facts or general truths.
+        <ul>
+          <li><em>If water boils, it turns to steam.</em></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Quiz for Lesson 4 -->
+     <button onclick="toggleQuiz(4)">Start Quiz</button>
+    <div id="quiz4" class="quiz">
+      <h3 class="quiz-title">Quiz: Conditional Sentences</h3>
+      <div class="quiz-question">
+        <p>1. Which conditional type expresses general truths?</p>
+        <input type="radio" name="q16" value="correct"> Zero Conditional<br>
+        <input type="radio" name="q16" value="wrong"> First Conditional<br>
+      </div>
+      <div class="quiz-question">
+        <p>2. Complete this sentence: "If I win the lottery, I ___ a car."</p>
+        <input type="radio" name="q17" value="correct"> Will buy<br>
+        <input type="radio" name="q17" value="wrong"> Bought<br>
+      </div>
+      <div class="quiz-question">
+        <p>3. Which sentence represents a third conditional?</p>
+        <input type="radio" name="q18" value="correct"> If I had studied, I would have passed.<br>
+        <input type="radio" name="q18" value="wrong"> If it rains, I will stay home.<br>
+      </div>
+      <div class="quiz-question">
+        <p>4. Which conditional shows an impossible situation?</p>
+        <input type="radio" name="q19" value="correct"> Second Conditional<br>
+        <input type="radio" name="q19" value="wrong"> Zero Conditional<br>
+      </div>
+      <div class="quiz-question">
+        <p>5. Choose the correct form: "If she had practiced, she ___ the competition."</p>
+        <input type="radio" name="q20" value="correct"> Would have won<br>
+        <input type="radio" name="q20" value="wrong"> Will win<br>
+      </div>
+      <button onclick="checkQuiz(4)">Submit Quiz</button>
+      <p id="quizResult4" class="result"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Lesson 5: Active and Passive Voice -->
+<div class="lesson-container">
+  <h2 onclick="toggleLesson(5)">Lesson 5: Active and Passive Voice</h2>
+  <div id="lesson5" class="lesson-content">
+    <audio controls>
+      <source src="audio/lesson5.mp3" type="audio/mpeg">
+    </audio>
+    <p>The voice of a verb describes whether the subject is performing the action (active) or receiving the action (passive).</p>
+    <ul>
+      <li><strong>Active Voice:</strong> The subject performs the action.
+        <ul>
+          <li><em>The chef cooked the meal.</em></li>
+        </ul>
+      </li>
+      <li><strong>Passive Voice:</strong> The subject receives the action.
+        <ul>
+          <li><em>The meal was cooked by the chef.</em></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Quiz for Lesson 5 -->
+     <button onclick="toggleQuiz(5)">Start Quiz</button>
+    <div id="quiz5" class="quiz">
+      <h3 class="quiz-title">Quiz: Active and Passive Voice</h3>
+      <div class="quiz-question">
+        <p>1. Which sentence is in active voice?</p>
+        <input type="radio" name="q21" value="correct"> She painted the house.<br>
+        <input type="radio" name="q21" value="wrong"> The house was painted by her.<br>
+      </div>
+      <div class="quiz-question">
+        <p>2. Convert this sentence to passive voice: "The manager approved the report."</p>
+        <input type="radio" name="q22" value="correct"> The report was approved by the manager.<br>
+        <input type="radio" name="q22" value="wrong"> The report approves the manager.<br>
+      </div>
+      <div class="quiz-question">
+        <p>3. Which sentence is in passive voice?</p>
+        <input type="radio" name="q23" value="wrong"> The teacher gave the students homework.<br>
+        <input type="radio" name="q23" value="correct"> Homework was given to the students by the teacher.<br>
+      </div>
+      <div class="quiz-question">
+        <p>4. Which voice is better for emphasizing the action rather than the subject?</p>
+        <input type="radio" name="q24" value="correct"> Passive<br>
+        <input type="radio" name="q24" value="wrong"> Active<br>
+      </div>
+      <div class="quiz-question">
+        <p>5. Convert this sentence to active voice: "The book was read by John."</p>
+        <input type="radio" name="q25" value="correct"> John read the book.<br>
+        <input type="radio" name="q25" value="wrong"> The book reads John.<br>
+      </div>
+      <button onclick="checkQuiz(5)">Submit Quiz</button>
+      <p id="quizResult5" class="result"></p>
+    </div>
+  </div>
+</div>
+
+
+  <button onclick="goBack()">Back to Learning Paths</button>
+
+  <footer>
+    <p>© 2025 DigiLearn. All rights reserved.</p>
+  </footer>
+
+  <script>
+    let currentLesson = null; // To track which lesson is currently open
+
+    function toggleLesson(lessonId) {
+  const lesson = document.getElementById(`lesson${lessonId}`);
+
+  if (lesson.classList.contains('show')) {
+    lesson.classList.remove('show');
+    setTimeout(() => lesson.style.visibility = 'hidden', 1000); // Wait for the full transition duration
+  } else {
+    lesson.style.visibility = 'visible';
+    setTimeout(() => lesson.classList.add('show'), 10);
+  }
+}
+
+function toggleLesson(lessonId) {
+  const lesson = document.getElementById(`lesson${lessonId}`);
+  const heading = document.querySelector(`h2[onclick="toggleLesson(${lessonId})"]`);
+
+  // Close the previous lesson if it's different
+  if (currentLesson && currentLesson !== lesson) {
+    currentLesson.classList.remove('show');
+    setTimeout(() => (currentLesson.style.display = 'none'), 500); // Wait for animation to complete
+    currentLesson = null;
+  }
+
+  // Open or close the selected lesson
+  if (!lesson.classList.contains('show')) {
+    lesson.style.display = 'block';
+    setTimeout(() => lesson.classList.add('show'), 10);
+    heading.setAttribute("aria-expanded", "true");
+    currentLesson = lesson;
+  } else {
+    lesson.classList.remove('show');
+    setTimeout(() => (lesson.style.display = 'none'), 500);
+    heading.setAttribute("aria-expanded", "false");
+    currentLesson = null;
+  }
+}
+
+  
+    function checkQuiz(lessonNumber) {
+      const questions = document.querySelectorAll(`#lesson${lessonNumber} .quiz-question`);
+      let correctAnswers = 0;
+      let totalQuestions = questions.length;
+
+      questions.forEach((question, index) => {
+        const selectedOption = question.querySelector('input[type="radio"]:checked');
+        const resultText = question.querySelector(`.result-text-${index + 1}`) || document.createElement('span');
+
+        resultText.className = `result-text-${index + 1}`; 
+        resultText.style.display = 'inline-block'; 
+        resultText.style.marginLeft = '10px';
+
+        if (selectedOption) {
+          if (selectedOption.value === "correct") {
+            resultText.textContent = "Correct! Great job.";
+            resultText.style.color = 'green';
+            correctAnswers++;
+          } else {
+            resultText.textContent = "Wrong answer. Remember to review the lesson!";
+            resultText.style.color = 'red';
+          }
+        } else {
+          resultText.textContent = "Please select an option.";
+          resultText.style.color = 'orange';
+        }
+
+        question.appendChild(resultText);
+      });
+
+      const quizResult = document.getElementById(`quizResult${lessonNumber}`);
+      quizResult.textContent = `You answered ${correctAnswers} out of ${totalQuestions} questions correctly.`;
+      quizResult.style.color = correctAnswers === totalQuestions ? 'green' : 'red';
+    }
+
+  function toggleQuiz(quizNumber) {
+  const quizSection = document.getElementById(`quiz${quizNumber}`);
+  quizSection.classList.toggle('show');
+}
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,426 @@
+/* =============================
+   General Styling
+============================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    color: #202A44;
+}
+
+header {
+    background-color: #202A44;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* =============================
+   Button Styling
+============================= */
+button {
+    background-color: #202A44;
+    color: white;
+    border: none;
+    padding: 16px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #2E5A88;
+    transform: scale(1.05);
+}
+
+/* =============================
+   Lesson Containers
+============================= */
+.lesson-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .lesson-content {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out, max-height 0.8s ease-in-out;
+    overflow: hidden;
+    pointer-events: none; /* Prevent interaction when hidden */
+  }
+  
+  .lesson-content.show {
+    max-height: 1000px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto; /* Allow interaction when visible */
+  }
+  
+  
+
+.lesson-container h2 {
+    font-size: 36px;
+    color: #202A44;
+    margin-bottom: 15px;
+}
+
+.lesson-container p {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.lesson-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.lesson-container ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.lesson-container ul li strong {
+    color: #2E5A88;
+}
+
+.lesson-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* =============================
+   CAPSTONE-Specific Containers
+============================= */
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 50px 30px;
+    margin: 40px auto;
+    max-width: 700px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    font-size: 36px;
+    color: #202A44;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* =============================
+   Features Section
+============================= */
+.features {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #202A44, #3A4B72, #4C6D91);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.features h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.feature-card h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #202A44;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #6A7B92;
+    line-height: 1.6;
+}
+
+/* =============================
+   Learning Paths Section
+============================= */
+.learning-paths {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+
+.learning-paths h3 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #202A44;
+}
+
+.paths-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.path-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.path-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.path-card h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #202A44;
+}
+
+.path-card p {
+    font-size: 16px;
+    color: #555555;
+}
+
+.path-card button {
+    background-color: #202A44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+.path-card button:hover {
+    background-color: #2E5A88;
+    transform: scale(1.05);
+}
+
+/* =============================
+   Fun Facts Section
+============================= */
+.fun-facts {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.fun-facts h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #202A44;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fun-facts p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fun-facts:hover {
+    background-color: #202A44;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.fun-facts:hover h3,
+.fun-facts:hover p {
+    color: #fff;
+}
+
+/* =============================
+   Lesson Specific Section
+============================= */
+
+.lesson-content {
+    display: none;
+    padding-left: 20px;
+  }
+  h2 {
+    cursor: pointer;
+  }
+
+  .quiz {
+    visibility: hidden; /* Hide the element visually */
+    max-height: 0; /* Collapse it to avoid layout issues */
+    opacity: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease;
+    overflow: hidden; /* Prevent content overflow when collapsed */
+  }
+  
+  .quiz.show {
+    visibility: visible;
+    max-height: 1000px; /* Large enough to reveal all quiz content */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .quiz-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2E5A88;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .quiz-question {
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .quiz-question p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .quiz-options label {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  .quiz-options input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  .submit-button {
+    background-color: #2E5A88;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+
+  .submit-button:hover {
+    background-color: #1d3b5a;
+  }
+
+  .result {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+/* =============================
+   Media Queries
+============================= */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    .lesson-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .lesson-container h2 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}

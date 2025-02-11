@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary Lessons</title>
+  <link rel="stylesheet" href="CAPSTONE.css">
+</head>
+<body>
+  <header>
+    <h1>Vocabulary Lessons</h1>
+    <p>Expand your vocabulary and express yourself more effectively!</p>
+  </header>
+
+  <!-- Lesson 1: Synonyms and Antonyms -->
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(1)">Lesson 1: Synonyms and Antonyms</h2>
+    <div id="lesson1" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson1.mp3" type="audio/mpeg">
+      </audio>
+      <p>Understanding synonyms and antonyms can help you diversify your vocabulary. It's essential to learn both to express yourself with variety and precision.</p>
+
+      <!-- Quiz for Lesson 1 -->
+       <button onclick="toggleQuiz(1)">Start Quiz</button>
+      <div id="quiz1" class="quiz">
+        <h3 class="quiz-title">Quiz: Synonyms and Antonyms</h3>
+        <div class="quiz-question">
+          <p>1. Which word is a synonym for "happy"?</p>
+          <input type="radio" name="q1" value="correct"> Joyful<br>
+          <input type="radio" name="q1" value="wrong"> Sad<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. Which is the antonym of "hot"?</p>
+          <input type="radio" name="q2" value="wrong"> Warm<br>
+          <input type="radio" name="q2" value="correct"> Cold<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. Choose the correct synonym for "fast".</p>
+          <input type="radio" name="q3" value="correct"> Quick<br>
+          <input type="radio" name="q3" value="wrong"> Slow<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. Which of the following is an antonym for "difficult"?</p>
+          <input type="radio" name="q4" value="correct"> Easy<br>
+          <input type="radio" name="q4" value="wrong"> Complicated<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. Which word is not a synonym for "angry"?</p>
+          <input type="radio" name="q5" value="wrong"> Furious<br>
+          <input type="radio" name="q5" value="correct"> Joyful<br>
+        </div>
+        <button onclick="checkQuiz(1)">Submit Quiz</button>
+        <p id="quizResult1" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lesson 2: Homophones -->
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(2)">Lesson 2: Homophones</h2>
+    <div id="lesson2" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson2.mp3" type="audio/mpeg">
+      </audio>
+      <p>Homophones are words that sound the same but have different meanings and spellings. These can be tricky but are crucial for mastering spelling and understanding context.</p>
+
+      <!-- Quiz for Lesson 2 -->
+       <button onclick="toggleQuiz(2)">Start Quiz</button>
+      <div class="quiz">
+        <h3 class="quiz-title">Quiz: Homophones</h3>
+        <div class="quiz-question">
+          <p>1. Which pair are homophones?</p>
+          <input type="radio" name="q6" value="correct"> Bear / Bare<br>
+          <input type="radio" name="q6" value="wrong"> Cat / Dog<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. Choose the correct homophone: "I need ___ of those apples."</p>
+          <input type="radio" name="q7" value="wrong"> Bare<br>
+          <input type="radio" name="q7" value="correct"> Two<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. Which homophone fits in this sentence: "He will ___ the heavy load."?</p>
+          <input type="radio" name="q8" value="correct"> Bear<br>
+          <input type="radio" name="q8" value="wrong"> Bare<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. Choose the correct homophone for the sentence: "She will ___ the meeting."</p>
+          <input type="radio" name="q9" value="correct"> Lead<br>
+          <input type="radio" name="q9" value="wrong"> Led<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. Which homophone completes this sentence: "Please ___ a smile for the camera."</p>
+          <input type="radio" name="q10" value="correct"> Wear<br>
+          <input type="radio" name="q10" value="wrong"> Where<br>
+        </div>
+        <button onclick="checkQuiz(2)">Submit Quiz</button>
+        <p id="quizResult2" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+ <!-- Lesson 3: Idioms -->
+ <div class="lesson-container">
+  <h2 onclick="toggleLesson(3)">Lesson 3: Idioms</h2>
+  <div id="lesson3" class="lesson-content">
+    <audio controls>
+      <source src="audio/lesson3.mp3" type="audio/mpeg">
+    </audio>
+    <p>Idioms are expressions whose meanings aren't always literal, and they're often cultural. Knowing idioms can make you sound more like a native speaker and improve your understanding of a language.</p>
+
+    <!-- Quiz for Lesson 3 -->
+     <button onclick="toggleQuiz(3)">Start Quiz</button>
+    <div id="quiz3" class="quiz">
+      <h3 class="quiz-title">Quiz: Idioms</h3>
+      <div class="quiz-question">
+        <p>1. What does the idiom "Break the ice" mean?</p>
+        <input type="radio" name="q11" value="correct"> Initiate a conversation<br>
+        <input type="radio" name="q11" value="wrong"> Break something physically<br>
+      </div>
+      <div class="quiz-question">
+        <p>2. Which idiom means "very easy"?</p>
+        <input type="radio" name="q12" value="correct"> Piece of cake<br>
+        <input type="radio" name="q12" value="wrong"> Break the bank<br>
+      </div>
+      <div class="quiz-question">
+        <p>3. Choose the idiom that means "to feel nervous or anxious."</p>
+        <input type="radio" name="q13" value="wrong"> Break the ice<br>
+        <input type="radio" name="q13" value="correct"> Butterflies in the stomach<br>
+      </div>
+      <div class="quiz-question">
+        <p>4. Which idiom means "to give up"?</p>
+        <input type="radio" name="q14" value="wrong"> Break the ice<br>
+        <input type="radio" name="q14" value="correct"> Throw in the towel<br>
+      </div>
+      <div class="quiz-question">
+        <p>5. What does the idiom "Hit the sack" mean?</p>
+        <input type="radio" name="q15" value="correct"> Go to sleep<br>
+        <input type="radio" name="q15" value="wrong"> Hit something hard<br>
+      </div>
+      <button onclick="checkQuiz(3)">Submit Quiz</button>
+      <p id="quizResult3" class="result"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Lesson 4: Prefixes and Suffixes -->
+<div class="lesson-container">
+  <h2 onclick="toggleLesson(4)">Lesson 4: Prefixes and Suffixes</h2>
+  <div id="lesson4" class="lesson-content">
+    <audio controls>
+      <source src="audio/lesson4.mp3" type="audio/mpeg">
+    </audio>
+    <p>Prefixes and suffixes can change the meaning of a word. Understanding these can help you guess the meaning of unfamiliar words and improve your vocabulary.</p>
+
+    <!-- Quiz for Lesson 4 -->
+    <button onclick="toggleQuiz(4)">Start Quiz</button>
+    <div id="quiz4" class="quiz">
+      <h3 class="quiz-title">Quiz: Prefixes and Suffixes</h3>
+      <div class="quiz-question">
+        <p>1. What does the prefix "un-" usually mean?</p>
+        <input type="radio" name="q16" value="correct"> Not<br>
+        <input type="radio" name="q16" value="wrong"> Very<br>
+      </div>
+      <div class="quiz-question">
+        <p>2. Which suffix turns an adjective into an adverb?</p>
+        <input type="radio" name="q17" value="correct"> -ly<br>
+        <input type="radio" name="q17" value="wrong"> -ness<br>
+      </div>
+      <div class="quiz-question">
+        <p>3. What is the meaning of the prefix "re-"?</p>
+        <input type="radio" name="q18" value="correct"> Again<br>
+        <input type="radio" name="q18" value="wrong"> Before<br>
+      </div>
+      <div class="quiz-question">
+        <p>4. Which suffix is used to form the noun of "happy"?</p>
+        <input type="radio" name="q19" value="wrong"> -ful<br>
+        <input type="radio" name="q19" value="correct"> -ness<br>
+      </div>
+      <div class="quiz-question">
+        <p>5. What does the prefix "mis-" usually mean?</p>
+        <input type="radio" name="q20" value="correct"> Wrong<br>
+        <input type="radio" name="q20" value="wrong"> Right<br>
+      </div>
+      <button onclick="checkQuiz(4)">Submit Quiz</button>
+      <p id="quizResult4" class="result"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Lesson 5: Phrasal Verbs -->
+<div class="lesson-container">
+  <h2 onclick="toggleLesson(5)">Lesson 5: Phrasal Verbs</h2>
+  <div id="lesson5" class="lesson-content">
+    <audio controls>
+      <source src="audio/lesson5.mp3" type="audio/mpeg">
+    </audio>
+    <p>Phrasal verbs are expressions made of a verb and a preposition or adverb. They often have meanings that can't be deduced from the individual words.</p>
+
+    <!-- Quiz for Lesson 5 -->
+     <button onclick="toggleQuiz(5)">Start Quiz</button>
+    <div id="quiz5" class="quiz">
+      <h3 class="quiz-title">Quiz: Phrasal Verbs</h3>
+      <div class="quiz-question">
+        <p>1. What does "give up" mean?</p>
+        <input type="radio" name="q21" value="correct"> Quit<br>
+        <input type="radio" name="q21" value="wrong"> Start<br>
+      </div>
+      <div class="quiz-question">
+        <p>2. Choose the correct meaning for "get along".</p>
+        <input type="radio" name="q22" value="correct"> Have a good relationship<br>
+        <input type="radio" name="q22" value="wrong"> Fight<br>
+      </div>
+      <div class="quiz-question">
+        <p>3. Which phrasal verb means "to take care of"?</p>
+        <input type="radio" name="q23" value="correct"> Look after<br>
+        <input type="radio" name="q23" value="wrong"> Look up<br>
+      </div>
+      <div class="quiz-question">
+        <p>4. What does "turn down" mean?</p>
+        <input type="radio" name="q24" value="correct"> Reject<br>
+        <input type="radio" name="q24" value="wrong"> Accept<br>
+      </div>
+      <div class="quiz-question">
+        <p>5. Choose the correct meaning of "put off".</p>
+        <input type="radio" name="q25" value="correct"> Postpone<br>
+        <input type="radio" name="q25" value="wrong"> Bring forward<br>
+      </div>
+      <button onclick="checkQuiz(5)">Submit Quiz</button>
+      <p id="quizResult5" class="result"></p>
+    </div>
+  </div>
+</div>
+
+<button onclick="goBack()">Back to Learning Paths</button>
+
+<footer>
+  <p>© 2025 DigiLearn. All rights reserved.</p>
+</footer>
+  <script>
+  let currentLesson = null; // To track which lesson is currently open
+
+function toggleLesson(lessonId) {
+const lesson = document.getElementById(`lesson${lessonId}`);
+
+if (lesson.classList.contains('show')) {
+lesson.classList.remove('show');
+setTimeout(() => lesson.style.visibility = 'hidden', 1000); // Wait for the full transition duration
+} else {
+lesson.style.visibility = 'visible';
+setTimeout(() => lesson.classList.add('show'), 10);
+}
+}
+
+function toggleLesson(lessonId) {
+const lesson = document.getElementById(`lesson${lessonId}`);
+const heading = document.querySelector(`h2[onclick="toggleLesson(${lessonId})"]`);
+
+// Close the previous lesson if it's different
+if (currentLesson && currentLesson !== lesson) {
+currentLesson.classList.remove('show');
+setTimeout(() => (currentLesson.style.display = 'none'), 500); // Wait for animation to complete
+currentLesson = null;
+}
+
+// Open or close the selected lesson
+if (!lesson.classList.contains('show')) {
+lesson.style.display = 'block';
+setTimeout(() => lesson.classList.add('show'), 10);
+heading.setAttribute("aria-expanded", "true");
+currentLesson = lesson;
+} else {
+lesson.classList.remove('show');
+setTimeout(() => (lesson.style.display = 'none'), 500);
+heading.setAttribute("aria-expanded", "false");
+currentLesson = null;
+}
+}
+
+
+function checkQuiz(lessonNumber) {
+  const questions = document.querySelectorAll(`#lesson${lessonNumber} .quiz-question`);
+  let correctAnswers = 0;
+  let totalQuestions = questions.length;
+
+  questions.forEach((question, index) => {
+    const selectedOption = question.querySelector('input[type="radio"]:checked');
+    const resultText = question.querySelector(`.result-text-${index + 1}`) || document.createElement('span');
+
+    resultText.className = `result-text-${index + 1}`; 
+    resultText.style.display = 'inline-block'; 
+    resultText.style.marginLeft = '10px';
+
+    if (selectedOption) {
+      if (selectedOption.value === "correct") {
+        resultText.textContent = "Correct! Great job.";
+        resultText.style.color = 'green';
+        correctAnswers++;
+      } else {
+        resultText.textContent = "Wrong answer. Remember to review the lesson!";
+        resultText.style.color = 'red';
+      }
+    } else {
+      resultText.textContent = "Please select an option.";
+      resultText.style.color = 'orange';
+    }
+
+    question.appendChild(resultText);
+  });
+
+  const quizResult = document.getElementById(`quizResult${lessonNumber}`);
+  quizResult.textContent = `You answered ${correctAnswers} out of ${totalQuestions} questions correctly.`;
+  quizResult.style.color = correctAnswers === totalQuestions ? 'green' : 'red';
+}
+
+function toggleQuiz(quizNumber) {
+const quizSection = document.getElementById(`quiz${quizNumber}`);
+quizSection.classList.toggle('show');
+}
+
+function goBack() {
+  window.history.back();
+}
+  </script>
+</body>
+</html>

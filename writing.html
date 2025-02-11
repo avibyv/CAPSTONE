@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing Skills Lessons</title>
+  <link rel="stylesheet" href="CAPSTONE.css">
+</head>
+<body>
+  <header>
+    <h1>Writing Skills Lessons</h1>
+    <p>Enhance your writing skills and become a better writer!</p>
+  </header>
+
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(1)">Lesson 1: Writing a Strong Introduction</h2>
+    <div id="lesson1" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson1.mp3" type="audio/mpeg">
+      </audio>
+      <p>The introduction sets the tone for the rest of your work by grabbing attention and establishing the context.</p>
+      <ul>
+        <li><strong>Hook:</strong> An engaging first sentence to capture the reader's interest.</li>
+        <li><strong>Context:</strong> Background information on the topic.</li>
+        <li><strong>Thesis Statement:</strong> Your main point or argument.</li>
+      </ul>
+
+      <!-- Quiz for Lesson 1 -->
+       <button onclick="toggleQuiz(1)">Start Quiz</button>
+      <div id="quiz1" class="quiz">
+        <h3 class="quiz-title">Quiz: Writing a Strong Introduction</h3>
+        <div class="quiz-question">
+          <p>1. What is the purpose of a hook in an introduction?</p>
+          <input type="radio" name="q1" value="correct"> To capture the reader's interest<br>
+          <input type="radio" name="q1" value="wrong"> To provide evidence<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. What should follow the hook in an introduction?</p>
+          <input type="radio" name="q2" value="correct"> Context<br>
+          <input type="radio" name="q2" value="wrong"> A conclusion<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. What is a thesis statement?</p>
+          <input type="radio" name="q3" value="correct"> The main argument of the essay<br>
+          <input type="radio" name="q3" value="wrong"> A random statement<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. Which of the following is an example of a hook?</p>
+          <input type="radio" name="q4" value="correct"> "Have you ever wondered why the sky is blue?"<br>
+          <input type="radio" name="q4" value="wrong"> "This essay is about the sky."<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. What should you avoid in an introduction?</p>
+          <input type="radio" name="q5" value="correct"> Giving too much detail<br>
+          <input type="radio" name="q5" value="wrong"> Being concise<br>
+        </div>
+        <button onclick="checkQuiz(1)">Submit Quiz</button>
+        <p id="quizResult1" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(2)">Lesson 2: Structuring Your Paragraphs</h2>
+    <div id="lesson2" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson2.mp3" type="audio/mpeg">
+      </audio>
+      <p>A well-structured paragraph contains a topic sentence, supporting details, and a conclusion.</p>
+      <ul>
+        <li><strong>Topic Sentence:</strong> Introduces the main idea of the paragraph.</li>
+        <li><strong>Supporting Details:</strong> Provides evidence or examples to back up the topic sentence.</li>
+        <li><strong>Concluding Sentence:</strong> Ties the paragraph back to the thesis or transitions to the next point.</li>
+      </ul>
+
+      <!-- Quiz for Lesson 2 -->
+       <button onclick="toggleQuiz(2)">Start Quiz</button>
+      <div id="quiz2" class="quiz">
+        <h3 class="quiz-title">Quiz: Structuring Your Paragraphs</h3>
+        <div class="quiz-question">
+          <p>1. What is the main component of a paragraph?</p>
+          <input type="radio" name="q6" value="correct"> Topic sentence<br>
+          <input type="radio" name="q6" value="wrong"> Hook statement<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. What follows the topic sentence?</p>
+          <input type="radio" name="q7" value="correct"> Supporting details<br>
+          <input type="radio" name="q7" value="wrong"> Another topic sentence<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. What is the purpose of a concluding sentence?</p>
+          <input type="radio" name="q8" value="correct"> Tie the paragraph back to the thesis<br>
+          <input type="radio" name="q8" value="wrong"> Introduce a new topic<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. What should you avoid in a paragraph?</p>
+          <input type="radio" name="q9" value="correct"> Including too many ideas<br>
+          <input type="radio" name="q9" value="wrong"> Providing examples<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. How should a paragraph transition to the next?</p>
+          <input type="radio" name="q10" value="correct"> Using transition sentences<br>
+          <input type="radio" name="q10" value="wrong"> Leaving it abruptly<br>
+        </div>
+        <button onclick="checkQuiz(2)">Submit Quiz</button>
+        <p id="quizResult2" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lesson 3 -->
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(3)">Lesson 3: Writing a Clear Conclusion</h2>
+    <div id="lesson3" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson3.mp3" type="audio/mpeg">
+      </audio>
+      <p>A clear conclusion summarizes the main points of your writing and reinforces the thesis statement.</p>
+      <ul>
+        <li><strong>Summary:</strong> Briefly restate key points.</li>
+        <li><strong>Reinforcement:</strong> Emphasize the significance of the argument.</li>
+        <li><strong>Closing Statement:</strong> Provide a memorable takeaway.</li>
+      </ul>
+
+      <!-- Quiz for Lesson 3 -->
+       <button onclick="toggleQuiz(3)">Start Quiz</button>
+      <div id="quiz3" class="quiz">
+        <h3 class="quiz-title">Quiz: Writing a Clear Conclusion</h3>
+        <div class="quiz-question">
+          <p>1. What is the primary purpose of a conclusion?</p>
+          <input type="radio" name="q11" value="correct"> To summarize the main points<br>
+          <input type="radio" name="q11" value="wrong"> To introduce new information<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. What should a conclusion reinforce?</p>
+          <input type="radio" name="q12" value="correct"> The thesis statement<br>
+          <input type="radio" name="q12" value="wrong"> Random facts<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. Which of the following should you avoid in a conclusion?</p>
+          <input type="radio" name="q13" value="correct"> Introducing new arguments<br>
+          <input type="radio" name="q13" value="wrong"> Summarizing key points<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. What makes a closing statement effective?</p>
+          <input type="radio" name="q14" value="correct"> It leaves a lasting impression<br>
+          <input type="radio" name="q14" value="wrong"> It repeats the introduction<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. Which sentence is a good example of a conclusion?</p>
+          <input type="radio" name="q15" value="correct"> "In summary, climate change requires immediate action."<br>
+          <input type="radio" name="q15" value="wrong"> "This essay is about climate change."<br>
+        </div>
+        <button onclick="checkQuiz(3)">Submit Quiz</button>
+        <p id="quizResult3" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lesson 4 -->
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(4)">Lesson 4: Developing a Persuasive Argument</h2>
+    <div id="lesson4" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson4.mp3" type="audio/mpeg">
+      </audio>
+      <p>A persuasive argument convinces the reader by presenting strong evidence and logical reasoning.</p>
+      <ul>
+        <li><strong>Claim:</strong> The main argument.</li>
+        <li><strong>Evidence:</strong> Support for the claim.</li>
+        <li><strong>Reasoning:</strong> Explanation of how the evidence supports the claim.</li>
+      </ul>
+
+      <!-- Quiz for Lesson 4 -->
+       <button onclick="toggleQuiz(4)">Start Quiz</button>
+      <div id="quiz4" class="quiz">
+        <h3 class="quiz-title">Quiz: Developing a Persuasive Argument</h3>
+        <div class="quiz-question">
+          <p>1. What is the main component of a persuasive argument?</p>
+          <input type="radio" name="q16" value="correct"> Claim<br>
+          <input type="radio" name="q16" value="wrong"> Conclusion<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. What strengthens a persuasive argument?</p>
+          <input type="radio" name="q17" value="correct"> Strong evidence<br>
+          <input type="radio" name="q17" value="wrong"> Unsupported opinions<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. Which of the following should you avoid in a persuasive argument?</p>
+          <input type="radio" name="q18" value="correct"> Logical fallacies<br>
+          <input type="radio" name="q18" value="wrong"> Relevant evidence<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. What is the purpose of reasoning in a persuasive argument?</p>
+          <input type="radio" name="q19" value="correct"> To explain how the evidence supports the claim<br>
+          <input type="radio" name="q19" value="wrong"> To confuse the reader<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. What makes an argument persuasive?</p>
+          <input type="radio" name="q20" value="correct"> Clear evidence and sound reasoning<br>
+          <input type="radio" name="q20" value="wrong"> Emotional outbursts<br>
+        </div>
+        <button onclick="checkQuiz(4)">Submit Quiz</button>
+        <p id="quizResult4" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lesson 5 -->
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(5)">Lesson 5: Editing and Revising</h2>
+    <div id="lesson5" class="lesson-content">
+      <audio controls>
+        <source src="audio/lesson5.mp3" type="audio/mpeg">
+      </audio>
+      <p>Editing and revising are essential steps to improve your writing by correcting errors and refining content.</p>
+      <ul>
+        <li><strong>Editing:</strong> Correcting grammar, punctuation, and spelling mistakes.</li>
+        <li><strong>Revising:</strong> Improving structure, clarity, and flow.</li>
+        <li><strong>Proofreading:</strong> A final review to catch minor errors.</li>
+      </ul>
+
+      <!-- Quiz for Lesson 5 -->
+       <button onclick="toggleQuiz(5)">Start Quiz</button>
+      <div id="quiz5" class="quiz">
+        <h3 class="quiz-title">Quiz: Editing and Revising</h3>
+        <div class="quiz-question">
+          <p>1. What is the purpose of editing?</p>
+          <input type="radio" name="q21" value="correct"> To correct grammar and spelling errors<br>
+          <input type="radio" name="q21" value="wrong"> To add new ideas<br>
+        </div>
+        <div class="quiz-question">
+          <p>2. What does revising focus on?</p>
+          <input type="radio" name="q22" value="correct"> Improving structure and clarity<br>
+          <input type="radio" name="q22" value="wrong"> Checking punctuation<br>
+        </div>
+        <div class="quiz-question">
+          <p>3. What should be done last in the writing process?</p>
+          <input type="radio" name="q23" value="correct"> Proofreading<br>
+          <input type="radio" name="q23" value="wrong"> Revising<br>
+        </div>
+        <div class="quiz-question">
+          <p>4. Which of the following is an example of editing?</p>
+          <input type="radio" name="q24" value="correct"> Correcting a spelling mistake<br>
+          <input type="radio" name="q24" value="wrong"> Adding a new paragraph<br>
+        </div>
+        <div class="quiz-question">
+          <p>5. What is a common mistake to catch during proofreading?</p>
+          <input type="radio" name="q25" value="correct"> Typos<br>
+          <input type="radio" name="q25" value="wrong"> Developing arguments<br>
+        </div>
+        <button onclick="checkQuiz(5)">Submit Quiz</button>
+        <p id="quizResult5" class="result"></p>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="goBack()">Back to Learning Paths</button>
+
+  <footer>
+    <p>© 2025 DigiLearn. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    let currentLesson = null; // To track which lesson is currently open
+
+function toggleLesson(lessonId) {
+const lesson = document.getElementById(`lesson${lessonId}`);
+
+if (lesson.classList.contains('show')) {
+lesson.classList.remove('show');
+setTimeout(() => lesson.style.visibility = 'hidden', 1000); // Wait for the full transition duration
+} else {
+lesson.style.visibility = 'visible';
+setTimeout(() => lesson.classList.add('show'), 10);
+}
+}
+
+function toggleLesson(lessonId) {
+const lesson = document.getElementById(`lesson${lessonId}`);
+const heading = document.querySelector(`h2[onclick="toggleLesson(${lessonId})"]`);
+
+// Close the previous lesson if it's different
+if (currentLesson && currentLesson !== lesson) {
+currentLesson.classList.remove('show');
+setTimeout(() => (currentLesson.style.display = 'none'), 500); // Wait for animation to complete
+currentLesson = null;
+}
+
+// Open or close the selected lesson
+if (!lesson.classList.contains('show')) {
+lesson.style.display = 'block';
+setTimeout(() => lesson.classList.add('show'), 10);
+heading.setAttribute("aria-expanded", "true");
+currentLesson = lesson;
+} else {
+lesson.classList.remove('show');
+setTimeout(() => (lesson.style.display = 'none'), 500);
+heading.setAttribute("aria-expanded", "false");
+currentLesson = null;
+}
+}
+
+
+function checkQuiz(lessonNumber) {
+  const questions = document.querySelectorAll(`#lesson${lessonNumber} .quiz-question`);
+  let correctAnswers = 0;
+  let totalQuestions = questions.length;
+
+  questions.forEach((question, index) => {
+    const selectedOption = question.querySelector('input[type="radio"]:checked');
+    const resultText = question.querySelector(`.result-text-${index + 1}`) || document.createElement('span');
+
+    resultText.className = `result-text-${index + 1}`; 
+    resultText.style.display = 'inline-block'; 
+    resultText.style.marginLeft = '10px';
+
+    if (selectedOption) {
+      if (selectedOption.value === "correct") {
+        resultText.textContent = "Correct! Great job.";
+        resultText.style.color = 'green';
+        correctAnswers++;
+      } else {
+        resultText.textContent = "Wrong answer. Remember to review the lesson!";
+        resultText.style.color = 'red';
+      }
+    } else {
+      resultText.textContent = "Please select an option.";
+      resultText.style.color = 'orange';
+    }
+
+    question.appendChild(resultText);
+  });
+
+  const quizResult = document.getElementById(`quizResult${lessonNumber}`);
+  quizResult.textContent = `You answered ${correctAnswers} out of ${totalQuestions} questions correctly.`;
+  quizResult.style.color = correctAnswers === totalQuestions ? 'green' : 'red';
+}
+
+function toggleQuiz(quizNumber) {
+const quizSection = document.getElementById(`quiz${quizNumber}`);
+quizSection.classList.toggle('show');
+}
+
+function goBack() {
+  window.history.back();
+}
+  </script>
+</body>
+</html>
