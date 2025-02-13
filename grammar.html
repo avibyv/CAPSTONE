@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
   <title>Grammar Lessons</title>
   <link rel="stylesheet" href="CAPSTONE.css">
 </head>
@@ -15,6 +15,12 @@
   <div class="lesson-container">
     <h2 onclick="toggleLesson(1)">Lesson 1: Simple Tenses of Verbs</h2>
     <div id="lesson1" class="lesson-content">
+        
+        <audio controls>
+            <source src="audio/lesson1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
         <p><strong>What are Tenses?</strong> Tenses show when an action happens.</p>
         
         <h3>Simple Present Tense</h3>
@@ -44,9 +50,16 @@
 <div class="lesson-container">
     <h2 onclick="toggleLesson(2)">Lesson 2: Subject-Verb Agreement</h2>
     <div id="lesson2" class="lesson-content">
+
+        <audio controls>
+            <source src="audio/lesson2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
         <p>A verb must <strong>match</strong> the subject in singular or plural form.</p>
         
         <h3>Singular Subjects → Singular Verbs</h3>
+
         <ul>
             <li>The cat <strong>jumps</strong> on the table.</li>
             <li>She <strong>likes</strong> ice cream.</li>
@@ -70,9 +83,16 @@
 <div class="lesson-container">
     <h2 onclick="toggleLesson(3)">Lesson 3: Types of Sentences (Structure)</h2>
     <div id="lesson3" class="lesson-content">
+
+        <audio controls>
+            <source src="audio/lesson3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
         <p>Sentences are classified based on the <strong>number of clauses</strong> they have.</p>
 
         <h3>Simple Sentence</h3>
+
         <ul>
             <li>I <strong>love</strong> pizza.</li>
             <li>She <strong>runs</strong> every morning.</li>
@@ -96,9 +116,16 @@
 <div class="lesson-container">
     <h2 onclick="toggleLesson(4)">Lesson 4: Perfect Tenses of Verbs</h2>
     <div id="lesson4" class="lesson-content">
+
+        <audio controls>
+            <source src="audio/lesson4.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
         <p>Perfect tenses show actions <strong>completed before another time.</strong></p>
 
         <h3>Present Perfect Tense</h3>
+
         <ul>
             <li>I <strong>have visited</strong> Japan twice.</li>
             <li>She <strong>has studied</strong> English for five years.</li>
@@ -122,9 +149,16 @@
 <div class="lesson-container">
     <h2 onclick="toggleLesson(5)">Lesson 5: Using Grammatical Signals for Idea Development</h2>
     <div id="lesson5" class="lesson-content">
+
+        <audio controls>
+            <source src="audio/lesson5.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
         <p>Grammatical signals <strong>help organize ideas</strong> in writing.</p>
 
         <h3> Cause and Effect</h3>
+
         <ul>
             <li><strong>Because</strong> it rained, we stayed home.</li>
             <li>She was late, <strong>so</strong> she missed the bus.</li>
@@ -388,11 +422,11 @@
     <p>© 2025 DigiLearn. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         let currentLesson = null;
     
-        function toggleLesson(lessonId) {
+          function toggleLesson(lessonId) {
             const lesson = document.getElementById(`lesson${lessonId}`);
     
             if (currentLesson && currentLesson !== lesson) {
@@ -486,6 +520,5 @@ function closeQuiz() {
         window.history.back();
     }
     </script>
-    
-</body>
+  </body>
 </html>
