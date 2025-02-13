@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grammar Lessons</title>
   <link rel="stylesheet" href="CAPSTONE.css">
 </head>
@@ -16,11 +16,9 @@
 
     <h2 onclick="toggleLesson(1)">Lesson 1: Parts of Speech</h2>
     <div id="lesson1" class="lesson-content">
-      
       <audio controls>
         <source src="audio/lesson1.mp3" type="audio/mpeg">
       </audio>
-
       <p>Understanding parts of speech is the foundation of grammar. These are the different categories of words that we use to build sentences. Let's break them down:</p>
         <ul>
           <li><strong>Nouns:</strong> A noun is a word that represents a person, place, thing, or idea.
@@ -33,6 +31,7 @@
       <!-- Quiz for Lesson 1 -->
        <button onclick="toggleQuiz(1)">Start Quiz</button>
       <div id="quiz1" class="quiz">
+        <button class="quiz-close" onclick="closeQuiz()">✖</button>
         <h3 class="quiz-title">Quiz: Parts of Speech</h3>
         <div class="quiz-question">
           <p>1. Which of the following is a noun?</p>
@@ -84,6 +83,7 @@
       <!-- Quiz for Lesson 2 -->
        <button onclick="toggleQuiz(2)">Start Quiz</button>
       <div id="quiz2" class="quiz">
+        <button class="quiz-close" onclick="closeQuiz()">✖</button>
         <h3 class="quiz-title">Quiz: Subject-Verb Agreement</h3>
         <div class="quiz-question">
           <p>1. Which sentence is correct?</p>
@@ -127,6 +127,7 @@
       <!-- Quiz for Lesson 3 -->
        <button onclick="toggleQuiz(3)">Start Quiz</button>
       <div id="quiz3" class="quiz">
+        <button class="quiz-close" onclick="closeQuiz()">✖</button>
         <h3 class="quiz-title">Quiz: Tenses</h3>
         <div class="quiz-question">
           <p>1. Which tense is this sentence: "She is cooking dinner."?</p>
@@ -180,6 +181,7 @@
     <!-- Quiz for Lesson 4 -->
      <button onclick="toggleQuiz(4)">Start Quiz</button>
     <div id="quiz4" class="quiz">
+      <button class="quiz-close" onclick="closeQuiz()">✖</button>
       <h3 class="quiz-title">Quiz: Conditional Sentences</h3>
       <div class="quiz-question">
         <p>1. Which conditional type expresses general truths?</p>
@@ -236,6 +238,7 @@
     <!-- Quiz for Lesson 5 -->
      <button onclick="toggleQuiz(5)">Start Quiz</button>
     <div id="quiz5" class="quiz">
+      <button class="quiz-close" onclick="closeQuiz()">✖</button>
       <h3 class="quiz-title">Quiz: Active and Passive Voice</h3>
       <div class="quiz-question">
         <p>1. Which sentence is in active voice?</p>
@@ -269,53 +272,49 @@
 </div>
 
 
-  <button onclick="goBack()">Back to Learning Paths</button>
+<button onclick="goBack()" class="back-to-learning-paths">Back to Learning Paths</button>
+
 
   <footer>
     <p>© 2025 DigiLearn. All rights reserved.</p>
   </footer>
 
   <script>
-    let currentLesson = null; // To track which lesson is currently open
+   document.addEventListener("DOMContentLoaded", function () {
+    let currentLesson = null; // Track the currently open lesson
 
     function toggleLesson(lessonId) {
-  const lesson = document.getElementById(`lesson${lessonId}`);
+        const lesson = document.getElementById(`lesson${lessonId}`);
 
-  if (lesson.classList.contains('show')) {
-    lesson.classList.remove('show');
-    setTimeout(() => lesson.style.visibility = 'hidden', 1000); // Wait for the full transition duration
-  } else {
-    lesson.style.visibility = 'visible';
-    setTimeout(() => lesson.classList.add('show'), 10);
-  }
-}
+        // Close the previously opened lesson
+        if (currentLesson && currentLesson !== lesson) {
+            currentLesson.style.maxHeight = null;
+            currentLesson.style.opacity = "0";
+            currentLesson.parentElement.classList.remove("active");
+        }
 
-function toggleLesson(lessonId) {
-  const lesson = document.getElementById(`lesson${lessonId}`);
-  const heading = document.querySelector(`h2[onclick="toggleLesson(${lessonId})"]`);
+        // Toggle the clicked lesson
+        if (lesson.style.maxHeight) {
+            lesson.style.maxHeight = null;
+            lesson.style.opacity = "0";
+            lesson.parentElement.classList.remove("active");
+            currentLesson = null;
+        } else {
+            lesson.style.maxHeight = lesson.scrollHeight + "px";
+            lesson.style.opacity = "1";
+            lesson.parentElement.classList.add("active");
+            currentLesson = lesson;
+        }
+    }
 
-  // Close the previous lesson if it's different
-  if (currentLesson && currentLesson !== lesson) {
-    currentLesson.classList.remove('show');
-    setTimeout(() => (currentLesson.style.display = 'none'), 500); // Wait for animation to complete
-    currentLesson = null;
-  }
+    // Attach event listeners to lesson titles
+    document.querySelectorAll(".lesson-container h2").forEach((title, index) => {
+        title.addEventListener("click", function () {
+            toggleLesson(index + 1);
+        });
+    });
+});
 
-  // Open or close the selected lesson
-  if (!lesson.classList.contains('show')) {
-    lesson.style.display = 'block';
-    setTimeout(() => lesson.classList.add('show'), 10);
-    heading.setAttribute("aria-expanded", "true");
-    currentLesson = lesson;
-  } else {
-    lesson.classList.remove('show');
-    setTimeout(() => (lesson.style.display = 'none'), 500);
-    heading.setAttribute("aria-expanded", "false");
-    currentLesson = null;
-  }
-}
-
-  
     function checkQuiz(lessonNumber) {
       const questions = document.querySelectorAll(`#lesson${lessonNumber} .quiz-question`);
       let correctAnswers = 0;
@@ -354,6 +353,20 @@ function toggleLesson(lessonId) {
   function toggleQuiz(quizNumber) {
   const quizSection = document.getElementById(`quiz${quizNumber}`);
   quizSection.classList.toggle('show');
+}
+
+function openQuiz(quizId) {
+    document.getElementById(quizId).classList.add('show');
+    document.querySelector('.quiz-overlay').classList.add('show');
+    document.body.classList.add('no-scroll');
+}
+
+function closeQuiz() {
+    const quizzes = document.querySelectorAll('.quiz');
+    quizzes.forEach(quiz => quiz.classList.remove('show'));
+
+    document.querySelector('.quiz-overlay').classList.remove('show');
+    document.body.classList.remove('no-scroll');
 }
 
     function goBack() {
