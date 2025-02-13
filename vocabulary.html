@@ -12,331 +12,449 @@
     <p>Expand your vocabulary and express yourself more effectively!</p>
   </header>
 
-  <!-- Lesson 1: Synonyms and Antonyms -->
   <div class="lesson-container">
-    <h2 onclick="toggleLesson(1)">Lesson 1: Synonyms and Antonyms</h2>
+    <h2 onclick="toggleLesson(1)">Lesson 1: Context Clues</h2>
     <div id="lesson1" class="lesson-content">
+
       <audio controls>
         <source src="audio/lesson1.mp3" type="audio/mpeg">
-      </audio>
-      <p>Understanding synonyms and antonyms can help you diversify your vocabulary. It's essential to learn both to express yourself with variety and precision.</p>
+        Your browser does not support the audio element.
+    </audio>
 
-      <!-- Quiz for Lesson 1 -->
-       <button onclick="toggleQuiz(1)">Start Quiz</button>
-      <div id="quiz1" class="quiz">
-        <button class="quiz-close" onclick="closeQuiz()">✖</button>
-        <h3 class="quiz-title">Quiz: Synonyms and Antonyms</h3>
-        <div class="quiz-question">
-          <p>1. Which word is a synonym for "happy"?</p>
-          <input type="radio" name="q1" value="correct"> Joyful<br>
-          <input type="radio" name="q1" value="wrong"> Sad<br>
-        </div>
-        <div class="quiz-question">
-          <p>2. Which is the antonym of "hot"?</p>
-          <input type="radio" name="q2" value="wrong"> Warm<br>
-          <input type="radio" name="q2" value="correct"> Cold<br>
-        </div>
-        <div class="quiz-question">
-          <p>3. Choose the correct synonym for "fast".</p>
-          <input type="radio" name="q3" value="correct"> Quick<br>
-          <input type="radio" name="q3" value="wrong"> Slow<br>
-        </div>
-        <div class="quiz-question">
-          <p>4. Which of the following is an antonym for "difficult"?</p>
-          <input type="radio" name="q4" value="correct"> Easy<br>
-          <input type="radio" name="q4" value="wrong"> Complicated<br>
-        </div>
-        <div class="quiz-question">
-          <p>5. Which word is not a synonym for "angry"?</p>
-          <input type="radio" name="q5" value="wrong"> Furious<br>
-          <input type="radio" name="q5" value="correct"> Joyful<br>
-        </div>
-        <button onclick="checkQuiz(1)">Submit Quiz</button>
-        <p id="quizResult1" class="result"></p>
-      </div>
+        <p>Context clues help determine the meaning of unfamiliar words. There are five types:</p>
+        <ul>
+            <li><strong>Definition:</strong> The meaning is directly stated.</li>
+            <blockquote>"An arboretum, a place where trees grow, is my favorite spot."</blockquote>
+            <li><strong>Synonym:</strong> A similar word is provided.</li>
+            <blockquote>"She was ecstatic, or extremely happy, about her birthday."</blockquote>
+            <li><strong>Antonym:</strong> The opposite meaning is given.</li>
+            <blockquote>"Unlike the fragile vase, the metal box was very strong."</blockquote>
+            <li><strong>Example:</strong> Examples help explain the word.</li>
+            <blockquote>"Many amphibians, such as frogs and salamanders, live on land and water."</blockquote>
+            <li><strong>Inference:</strong> The meaning is implied.</li>
+            <blockquote>"She is a pessimist, always expecting things to go wrong."</blockquote>
+        </ul>
+        <button onclick="toggleQuiz(1)">Take Quiz</button>
     </div>
   </div>
 
-  <!-- Lesson 2: Homophones -->
   <div class="lesson-container">
-    <h2 onclick="toggleLesson(2)">Lesson 2: Homophones</h2>
+    <h2 onclick="toggleLesson(2)">Lesson 2: Word Affixes (Prefixes and Suffixes)</h2>
     <div id="lesson2" class="lesson-content">
+
       <audio controls>
         <source src="audio/lesson2.mp3" type="audio/mpeg">
-      </audio>
-      <p>Homophones are words that sound the same but have different meanings and spellings. These can be tricky but are crucial for mastering spelling and understanding context.</p>
+        Your browser does not support the audio element.
+    </audio>
 
-      <!-- Quiz for Lesson 2 -->
-       <button onclick="toggleQuiz(2)">Start Quiz</button>
-      <div id="quiz2" class="quiz">
-        <button class="quiz-close" onclick="closeQuiz()">✖</button>
-        <h3 class="quiz-title">Quiz: Homophones</h3>
-        <div class="quiz-question">
-          <p>1. Which pair are homophones?</p>
-          <input type="radio" name="q6" value="correct"> Bear / Bare<br>
-          <input type="radio" name="q6" value="wrong"> Cat / Dog<br>
-        </div>
-        <div class="quiz-question">
-          <p>2. Choose the correct homophone: "I need ___ of those apples."</p>
-          <input type="radio" name="q7" value="wrong"> Bare<br>
-          <input type="radio" name="q7" value="correct"> Two<br>
-        </div>
-        <div class="quiz-question">
-          <p>3. Which homophone fits in this sentence: "He will ___ the heavy load."?</p>
-          <input type="radio" name="q8" value="correct"> Bear<br>
-          <input type="radio" name="q8" value="wrong"> Bare<br>
-        </div>
-        <div class="quiz-question">
-          <p>4. Choose the correct homophone for the sentence: "She will ___ the meeting."</p>
-          <input type="radio" name="q9" value="correct"> Lead<br>
-          <input type="radio" name="q9" value="wrong"> Led<br>
-        </div>
-        <div class="quiz-question">
-          <p>5. Which homophone completes this sentence: "Please ___ a smile for the camera."</p>
-          <input type="radio" name="q10" value="correct"> Wear<br>
-          <input type="radio" name="q10" value="wrong"> Where<br>
-        </div>
-        <button onclick="checkQuiz(2)">Submit Quiz</button>
-        <p id="quizResult2" class="result"></p>
-      </div>
+        <p>Prefixes and suffixes change a word’s meaning:</p>
+        <ul>
+            <li><strong>Prefixes:</strong> Added at the beginning.</li>
+            <blockquote>"Un- (not) → Unhappy, Re- (again) → Redo"</blockquote>
+            <li><strong>Suffixes:</strong> Added at the end.</li>
+            <blockquote>"-er (person who does) → Teacher, -able (can be) → Breakable"</blockquote>
+        </ul>
+        <button onclick="toggleQuiz(2)">Take Quiz</button>
     </div>
   </div>
 
- <!-- Lesson 3: Idioms -->
- <div class="lesson-container">
-  <h2 onclick="toggleLesson(3)">Lesson 3: Idioms</h2>
-  <div id="lesson3" class="lesson-content">
-    <audio controls>
-      <source src="audio/lesson3.mp3" type="audio/mpeg">
-    </audio>
-    <p>Idioms are expressions whose meanings aren't always literal, and they're often cultural. Knowing idioms can make you sound more like a native speaker and improve your understanding of a language.</p>
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(3)">Lesson 3: Synonyms and Antonyms</h2>
+    <div id="lesson3" class="lesson-content">
 
-    <!-- Quiz for Lesson 3 -->
-     <button onclick="toggleQuiz(3)">Start Quiz</button>
-    <div id="quiz3" class="quiz">
-      <button class="quiz-close" onclick="closeQuiz()">✖</button>
-      <h3 class="quiz-title">Quiz: Idioms</h3>
+      <audio controls>
+        <source src="audio/lesson3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+        <p>Synonyms have similar meanings, while antonyms have opposite meanings.</p>
+        <ul>
+            <li><strong>Synonyms:</strong></li>
+            <blockquote>"Happy → Joyful, Cheerful. Big → Huge, Large."</blockquote>
+            <li><strong>Antonyms:</strong></li>
+            <blockquote>"Hot → Cold. Fast → Slow."</blockquote>
+        </ul>
+        <button onclick="toggleQuiz(3)">Take Quiz</button>
+    </div>
+  </div>
+
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(4)">Lesson 4: Homonyms (Words with Multiple Meanings)</h2>
+    <div id="lesson4" class="lesson-content">
+
+      <audio controls>
+        <source src="audio/lesson4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+        <p>Homonyms are words with different meanings based on context:</p>
+        <ul>
+            <li><strong>Bat:</strong></li>
+            <blockquote>"A flying animal / A baseball stick."</blockquote>
+            <li><strong>Bank:</strong></li>
+            <blockquote>"A financial institution / The side of a river."</blockquote>
+            <li><strong>Light:</strong></li>
+            <blockquote>"Not heavy / Something that illuminates."</blockquote>
+        </ul>
+        <button onclick="toggleQuiz(4)">Take Quiz</button>
+    </div>
+  </div>
+
+  <div class="lesson-container">
+    <h2 onclick="toggleLesson(5)">Lesson 5: Idiomatic Expressions</h2>
+    <div id="lesson5" class="lesson-content">
+
+      <audio controls>
+        <source src="audio/lesson5.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+        <p>Idioms are phrases that don’t mean exactly what they say:</p>
+        <ul>
+            <li><strong>Break a leg:</strong></li>
+            <blockquote>"Good luck."</blockquote>
+            <li><strong>Hit the sack:</strong></li>
+            <blockquote>"Go to sleep."</blockquote>
+            <li><strong>Under the weather:</strong></li>
+            <blockquote>"Feeling sick."</blockquote>
+        </ul>
+        <button onclick="toggleQuiz(5)">Take Quiz</button>
+    </div>
+  </div>
+
+<div id="quiz1" class="quiz">
+    <div class="quiz-header">
+      <button class="quiz-close" onclick="closeQuiz(1)">✖</button>
+    </div>
+    <div class="quiz-content">
+      <h3>Quiz: Context Clues</h3>
       <div class="quiz-question">
-        <p>1. What does the idiom "Break the ice" mean?</p>
-        <input type="radio" name="q11" value="correct"> Initiate a conversation<br>
-        <input type="radio" name="q11" value="wrong"> Break something physically<br>
+        <p>1. What type of context clue is used in this sentence? "A habitat, or natural home of an animal, is important for survival."</p>
+        <label><input type="radio" name="q1" value="wrong"> Synonym</label><br>
+        <label><input type="radio" name="q1" value="wrong"> Antonym</label><br>
+        <label><input type="radio" name="q1" value="correct"> Definition</label><br>
+        <label><input type="radio" name="q1" value="wrong"> Example</label>
       </div>
       <div class="quiz-question">
-        <p>2. Which idiom means "very easy"?</p>
-        <input type="radio" name="q12" value="correct"> Piece of cake<br>
-        <input type="radio" name="q12" value="wrong"> Break the bank<br>
+        <p>2. Which word best fits the sentence? "The scientist was _________, or extremely careful, when handling the chemicals."</p>
+        <label><input type="radio" name="q2" value="wrong"> Reckless</label><br>
+        <label><input type="radio" name="q2" value="correct"> Cautious</label><br>
+        <label><input type="radio" name="q2" value="wrong"> Clumsy</label><br>
+        <label><input type="radio" name="q2" value="wrong"> Distracted</label>
       </div>
       <div class="quiz-question">
-        <p>3. Choose the idiom that means "to feel nervous or anxious."</p>
-        <input type="radio" name="q13" value="wrong"> Break the ice<br>
-        <input type="radio" name="q13" value="correct"> Butterflies in the stomach<br>
+        <p>3. What type of context clue is used when a sentence provides an opposite meaning?</p>
+        <label><input type="radio" name="q3" value="wrong"> Inference</label><br>
+        <label><input type="radio" name="q3" value="wrong"> Example</label><br>
+        <label><input type="radio" name="q3" value="correct"> Antonym</label><br>
+        <label><input type="radio" name="q3" value="wrong"> Synonym</label>
       </div>
       <div class="quiz-question">
-        <p>4. Which idiom means "to give up"?</p>
-        <input type="radio" name="q14" value="wrong"> Break the ice<br>
-        <input type="radio" name="q14" value="correct"> Throw in the towel<br>
+        <p>4. Which sentence uses an inference-type context clue?</p>
+        <label><input type="radio" name="q4" value="correct"> Unlike his fearless friend, Tom was timid when speaking in front of a crowd.</label><br>
+        <label><input type="radio" name="q4" value="wrong"> A linguist, or language expert, studies words and communication.</label><br>
+        <label><input type="radio" name="q4" value="wrong"> The jungle has predators, such as lions and tigers.</label><br>
+        <label><input type="radio" name="q4" value="wrong"> She was ecstatic, or very happy, about the results.</label>
       </div>
       <div class="quiz-question">
-        <p>5. What does the idiom "Hit the sack" mean?</p>
-        <input type="radio" name="q15" value="correct"> Go to sleep<br>
-        <input type="radio" name="q15" value="wrong"> Hit something hard<br>
+        <p>5. What type of context clue is used when a sentence provides an example?</p>
+        <label><input type="radio" name="q5" value="wrong"> Definition</label><br>
+        <label><input type="radio" name="q5" value="wrong"> Synonym</label><br>
+        <label><input type="radio" name="q5" value="correct"> Example</label><br>
+        <label><input type="radio" name="q5" value="wrong"> Inference</label>
       </div>
+      <p id="quizResult1"></p>
+      <button onclick="checkQuiz(1)">Submit Quiz</button>
+    </div>
+  </div>
+
+  <div id="quiz2" class="quiz">
+    <div class="quiz-header">
+      <button class="quiz-close" onclick="closeQuiz(2)">✖</button>
+    </div>
+    <div class="quiz-content">
+      <h3>Quiz: Word Affixes</h3>
+      <div class="quiz-question">
+        <p>1. What is the meaning of "unpredictable" based on the prefix "un-"?</p>
+        <label><input type="radio" name="q2_1" value="wrong"> Easy to guess</label><br>
+        <label><input type="radio" name="q2_1" value="correct"> Not able to be predicted</label><br>
+        <label><input type="radio" name="q2_1" value="wrong"> Already decided</label><br>
+        <label><input type="radio" name="q2_1" value="wrong"> Difficult but possible to predict</label>
+      </div>
+      <div class="quiz-question">
+        <p>2. Which suffix would turn the word "hope" into a noun?</p>
+        <label><input type="radio" name="q2_2" value="wrong"> -ing</label><br>
+        <label><input type="radio" name="q2_2" value="wrong"> -ed</label><br>
+        <label><input type="radio" name="q2_2" value="wrong"> -ful</label><br>
+        <label><input type="radio" name="q2_2" value="correct"> -ness</label>
+      </div>
+      <div class="quiz-question">
+        <p>3. What does the word "rewrite" mean based on its prefix?</p>
+        <label><input type="radio" name="q2_3" value="correct"> Write again</label><br>
+        <label><input type="radio" name="q2_3" value="wrong"> Write differently</label><br>
+        <label><input type="radio" name="q2_3" value="wrong"> Erase writing</label><br>
+        <label><input type="radio" name="q2_3" value="wrong"> Stop writing</label>
+      </div>
+      <div class="quiz-question">
+        <p>4. The suffix "-able" in "breakable" means:</p>
+        <label><input type="radio" name="q2_4" value="correct"> Can be broken</label><br>
+        <label><input type="radio" name="q2_4" value="wrong"> Cannot be broken</label><br>
+        <label><input type="radio" name="q2_4" value="wrong"> Already broken</label><br>
+        <label><input type="radio" name="q2_4" value="wrong"> Slowly breaking</label>
+      </div>
+      <div class="quiz-question">
+        <p>5. Which of the following words contains both a prefix and a suffix?</p>
+        <label><input type="radio" name="q2_5" value="wrong"> Joyful</label><br>
+        <label><input type="radio" name="q2_5" value="correct"> Unhappiness</label><br>
+        <label><input type="radio" name="q2_5" value="wrong"> Singer</label><br>
+        <label><input type="radio" name="q2_5" value="wrong"> Replace</label>
+      </div>
+      <p id="quizResult2"></p>
+      <button onclick="checkQuiz(2)">Submit Quiz</button>
+    </div>
+  </div>
+
+  <div id="quiz3" class="quiz">
+    <div class="quiz-header">
+      <button class="quiz-close" onclick="closeQuiz(3)">✖</button>
+    </div>
+    <div class="quiz-content">
+      <h3>Quiz: Synonyms and Antonyms</h3>
+      <div class="quiz-question">
+        <p>1. Which of the following is a synonym for "generous"?</p>
+        <label><input type="radio" name="q3_1" value="wrong"> Stingy</label><br>
+        <label><input type="radio" name="q3_1" value="correct"> Kind</label><br>
+        <label><input type="radio" name="q3_1" value="wrong"> Selfish</label><br>
+        <label><input type="radio" name="q3_1" value="wrong"> Greedy</label>
+      </div>
+      <div class="quiz-question">
+        <p>2. What is the antonym of "ancient"?</p>
+        <label><input type="radio" name="q3_2" value="correct"> Modern</label><br>
+        <label><input type="radio" name="q3_2" value="wrong"> Old</label><br>
+        <label><input type="radio" name="q3_2" value="wrong"> Historical</label><br>
+        <label><input type="radio" name="q3_2" value="wrong"> Traditional</label>
+      </div>
+      <div class="quiz-question">
+        <p>3. Choose the correct synonym for "gloomy".</p>
+        <label><input type="radio" name="q3_3" value="wrong"> Cheerful</label><br>
+        <label><input type="radio" name="q3_3" value="correct"> Dark</label><br>
+        <label><input type="radio" name="q3_3" value="wrong"> Bright</label><br>
+        <label><input type="radio" name="q3_3" value="wrong"> Happy</label>
+      </div>
+      <div class="quiz-question">
+        <p>4. Which word means the opposite of "expand"?</p>
+        <label><input type="radio" name="q3_4" value="wrong"> Increase</label><br>
+        <label><input type="radio" name="q3_4" value="wrong"> Grow</label><br>
+        <label><input type="radio" name="q3_4" value="correct"> Shrink</label><br>
+        <label><input type="radio" name="q3_4" value="wrong"> Enlarge</label>
+      </div>
+      <div class="quiz-question">
+        <p>5. What is the synonym of "fragile"?</p>
+        <label><input type="radio" name="q3_5" value="wrong"> Sturdy</label><br>
+        <label><input type="radio" name="q3_5" value="correct"> Breakable</label><br>
+        <label><input type="radio" name="q3_5" value="wrong"> Hard</label><br>
+        <label><input type="radio" name="q3_5" value="wrong"> Tough</label>
+      </div>
+      <p id="quizResult3"></p>
       <button onclick="checkQuiz(3)">Submit Quiz</button>
-      <p id="quizResult3" class="result"></p>
     </div>
+  </div>
+
+<div id="quiz4" class="quiz">
+  <div class="quiz-header">
+    <button class="quiz-close" onclick="closeQuiz(4)">✖</button>
+  </div>
+  <div class="quiz-content">
+    <h3>Quiz: Homonyms (Words with Multiple Meanings)</h3>
+    <div class="quiz-question">
+      <p>1. What is the correct meaning of "bat" in the sentence: "She swung the bat and hit the ball."</p>
+      <label><input type="radio" name="q4_1" value="wrong"> A flying mammal</label><br>
+      <label><input type="radio" name="q4_1" value="correct"> A wooden stick used in baseball</label><br>
+      <label><input type="radio" name="q4_1" value="wrong"> To move rapidly</label><br>
+      <label><input type="radio" name="q4_1" value="wrong"> A small cave-dwelling animal</label>
+    </div>
+    <div class="quiz-question">
+      <p>2. Which sentence uses "bank" to mean a financial institution?</p>
+      <label><input type="radio" name="q4_2" value="wrong"> We sat on the river bank and enjoyed the sunset.</label><br>
+      <label><input type="radio" name="q4_2" value="correct"> I deposited money at the bank today.</label><br>
+      <label><input type="radio" name="q4_2" value="wrong"> The airplane banked to the left before landing.</label><br>
+      <label><input type="radio" name="q4_2" value="wrong"> The snow had banked up against the door.</label>
+    </div>
+    <div class="quiz-question">
+      <p>3. What is the meaning of "light" in "Please turn on the light."</p>
+      <label><input type="radio" name="q4_3" value="wrong"> Not heavy</label><br>
+      <label><input type="radio" name="q4_3" value="correct"> A source of illumination</label><br>
+      <label><input type="radio" name="q4_3" value="wrong"> To make something less serious</label><br>
+      <label><input type="radio" name="q4_3" value="wrong"> A soft color</label>
+    </div>
+    <div class="quiz-question">
+      <p>4. Choose the sentence where "bark" means the outer covering of a tree.</p>
+      <label><input type="radio" name="q4_4" value="wrong"> The dog's bark was loud.</label><br>
+      <label><input type="radio" name="q4_4" value="correct"> The tree's bark was rough and brown.</label><br>
+      <label><input type="radio" name="q4_4" value="wrong"> He heard a bark in the distance.</label><br>
+      <label><input type="radio" name="q4_4" value="wrong"> The bark of the dog scared the thief.</label>
+    </div>
+    <div class="quiz-question">
+      <p>5. Which word is a homonym of "lead" (to guide or direct)?</p>
+      <label><input type="radio" name="q4_5" value="wrong"> Led</label><br>
+      <label><input type="radio" name="q4_5" value="correct"> Metal</label><br>
+      <label><input type="radio" name="q4_5" value="wrong"> Head</label><br>
+      <label><input type="radio" name="q4_5" value="wrong"> Lid</label>
+    </div>
+    <p id="quizResult4"></p>
+    <button onclick="checkQuiz(4)">Submit Quiz</button>
   </div>
 </div>
 
-<!-- Lesson 4: Prefixes and Suffixes -->
-<div class="lesson-container">
-  <h2 onclick="toggleLesson(4)">Lesson 4: Prefixes and Suffixes</h2>
-  <div id="lesson4" class="lesson-content">
-    <audio controls>
-      <source src="audio/lesson4.mp3" type="audio/mpeg">
-    </audio>
-    <p>Prefixes and suffixes can change the meaning of a word. Understanding these can help you guess the meaning of unfamiliar words and improve your vocabulary.</p>
-
-    <!-- Quiz for Lesson 4 -->
-    <button onclick="toggleQuiz(4)">Start Quiz</button>
-    <div id="quiz4" class="quiz">
-      <button class="quiz-close" onclick="closeQuiz()">✖</button>
-      <h3 class="quiz-title">Quiz: Prefixes and Suffixes</h3>
-      <div class="quiz-question">
-        <p>1. What does the prefix "un-" usually mean?</p>
-        <input type="radio" name="q16" value="correct"> Not<br>
-        <input type="radio" name="q16" value="wrong"> Very<br>
-      </div>
-      <div class="quiz-question">
-        <p>2. Which suffix turns an adjective into an adverb?</p>
-        <input type="radio" name="q17" value="correct"> -ly<br>
-        <input type="radio" name="q17" value="wrong"> -ness<br>
-      </div>
-      <div class="quiz-question">
-        <p>3. What is the meaning of the prefix "re-"?</p>
-        <input type="radio" name="q18" value="correct"> Again<br>
-        <input type="radio" name="q18" value="wrong"> Before<br>
-      </div>
-      <div class="quiz-question">
-        <p>4. Which suffix is used to form the noun of "happy"?</p>
-        <input type="radio" name="q19" value="wrong"> -ful<br>
-        <input type="radio" name="q19" value="correct"> -ness<br>
-      </div>
-      <div class="quiz-question">
-        <p>5. What does the prefix "mis-" usually mean?</p>
-        <input type="radio" name="q20" value="correct"> Wrong<br>
-        <input type="radio" name="q20" value="wrong"> Right<br>
-      </div>
-      <button onclick="checkQuiz(4)">Submit Quiz</button>
-      <p id="quizResult4" class="result"></p>
-    </div>
+<div id="quiz5" class="quiz">
+  <div class="quiz-header">
+    <button class="quiz-close" onclick="closeQuiz(5)">✖</button>
   </div>
-</div>
-
-<!-- Lesson 5: Phrasal Verbs -->
-<div class="lesson-container">
-  <h2 onclick="toggleLesson(5)">Lesson 5: Phrasal Verbs</h2>
-  <div id="lesson5" class="lesson-content">
-    <audio controls>
-      <source src="audio/lesson5.mp3" type="audio/mpeg">
-    </audio>
-    <p>Phrasal verbs are expressions made of a verb and a preposition or adverb. They often have meanings that can't be deduced from the individual words.</p>
-
-    <!-- Quiz for Lesson 5 -->
-     <button onclick="toggleQuiz(5)">Start Quiz</button>
-    <div id="quiz5" class="quiz">
-      <button class="quiz-close" onclick="closeQuiz()">✖</button>
-      <h3 class="quiz-title">Quiz: Phrasal Verbs</h3>
-      <div class="quiz-question">
-        <p>1. What does "give up" mean?</p>
-        <input type="radio" name="q21" value="correct"> Quit<br>
-        <input type="radio" name="q21" value="wrong"> Start<br>
-      </div>
-      <div class="quiz-question">
-        <p>2. Choose the correct meaning for "get along".</p>
-        <input type="radio" name="q22" value="correct"> Have a good relationship<br>
-        <input type="radio" name="q22" value="wrong"> Fight<br>
-      </div>
-      <div class="quiz-question">
-        <p>3. Which phrasal verb means "to take care of"?</p>
-        <input type="radio" name="q23" value="correct"> Look after<br>
-        <input type="radio" name="q23" value="wrong"> Look up<br>
-      </div>
-      <div class="quiz-question">
-        <p>4. What does "turn down" mean?</p>
-        <input type="radio" name="q24" value="correct"> Reject<br>
-        <input type="radio" name="q24" value="wrong"> Accept<br>
-      </div>
-      <div class="quiz-question">
-        <p>5. Choose the correct meaning of "put off".</p>
-        <input type="radio" name="q25" value="correct"> Postpone<br>
-        <input type="radio" name="q25" value="wrong"> Bring forward<br>
-      </div>
-      <button onclick="checkQuiz(5)">Submit Quiz</button>
-      <p id="quizResult5" class="result"></p>
+  <div class="quiz-content">
+    <h3>Quiz: Idiomatic Expressions</h3>
+    <div class="quiz-question">
+      <p>1. What does "break a leg" mean?</p>
+      <label><input type="radio" name="q5_1" value="wrong"> Get injured</label><br>
+      <label><input type="radio" name="q5_1" value="correct"> Good luck</label><br>
+      <label><input type="radio" name="q5_1" value="wrong"> Try harder</label><br>
+      <label><input type="radio" name="q5_1" value="wrong"> Be careful</label>
     </div>
+    <div class="quiz-question">
+      <p>2. If someone says "hit the sack," what are they going to do?</p>
+      <label><input type="radio" name="q5_2" value="wrong"> Go to work</label><br>
+      <label><input type="radio" name="q5_2" value="correct"> Go to sleep</label><br>
+      <label><input type="radio" name="q5_2" value="wrong"> Eat dinner</label><br>
+      <label><input type="radio" name="q5_2" value="wrong"> Play a game</label>
+    </div>
+    <div class="quiz-question">
+      <p>3. What does "under the weather" mean?</p>
+      <label><input type="radio" name="q5_3" value="wrong"> Outside in bad weather</label><br>
+      <label><input type="radio" name="q5_3" value="correct"> Feeling sick</label><br>
+      <label><input type="radio" name="q5_3" value="wrong"> Enjoying the sun</label><br>
+      <label><input type="radio" name="q5_3" value="wrong"> Watching the rain</label>
+    </div>
+    <div class="quiz-question">
+      <p>4. If someone is "all ears," what does it mean?</p>
+      <label><input type="radio" name="q5_4" value="wrong"> They have big ears</label><br>
+      <label><input type="radio" name="q5_4" value="correct"> They are listening carefully</label><br>
+      <label><input type="radio" name="q5_4" value="wrong"> They are ignoring you</label><br>
+      <label><input type="radio" name="q5_4" value="wrong"> They are covering their ears</label>
+    </div>
+    <div class="quiz-question">
+      <p>5. What does "spill the beans" mean?</p>
+      <label><input type="radio" name="q5_5" value="wrong"> To drop food</label><br>
+      <label><input type="radio" name="q5_5" value="correct"> To r eveal a secret</label><br>
+      <label><input type="radio" name="q5_5" value="wrong"> To tell a joke</label><br>
+      <label><input type="radio" name="q5_5" value="wrong"> To clean up a mess</label>
+    </div>
+    <p id="quizResult5"></p>
+    <button onclick="checkQuiz(5)">Submit Quiz</button>
   </div>
 </div>
 
 <button onclick="goBack()" class="back-to-learning-paths">Back to Learning Paths</button>
 
+  <footer>
+    <p>© 2025 DigiLearn. All rights reserved.</p>
+  </footer>
 
-<footer>
-  <p>© 2025 DigiLearn. All rights reserved.</p>
-</footer>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    let currentLesson = null; // Track the currently open lesson
-
-    function toggleLesson(lessonId) {
-        const lesson = document.getElementById(`lesson${lessonId}`);
-
-        // Close the previously opened lesson
-        if (currentLesson && currentLesson !== lesson) {
-            currentLesson.style.maxHeight = null;
-            currentLesson.style.opacity = "0";
-            currentLesson.parentElement.classList.remove("active");
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let currentLesson = null;
+    
+          function toggleLesson(lessonId) {
+            const lesson = document.getElementById(`lesson${lessonId}`);
+    
+            if (currentLesson && currentLesson !== lesson) {
+                currentLesson.style.maxHeight = null;
+                currentLesson.style.opacity = "0";
+                currentLesson.parentElement.classList.remove("active");
+            }
+    
+            if (lesson.style.maxHeight) {
+                lesson.style.maxHeight = null;
+                lesson.style.opacity = "0";
+                lesson.parentElement.classList.remove("active");
+                currentLesson = null;
+            } else {
+                lesson.style.maxHeight = lesson.scrollHeight + "px";
+                lesson.style.opacity = "1";
+                lesson.parentElement.classList.add("active");
+                currentLesson = lesson;
+            }
         }
-
-        // Toggle the clicked lesson
-        if (lesson.style.maxHeight) {
-            lesson.style.maxHeight = null;
-            lesson.style.opacity = "0";
-            lesson.parentElement.classList.remove("active");
-            currentLesson = null;
-        } else {
-            lesson.style.maxHeight = lesson.scrollHeight + "px";
-            lesson.style.opacity = "1";
-            lesson.parentElement.classList.add("active");
-            currentLesson = lesson;
-        }
-    }
-
-    // Attach event listeners to lesson titles
-    document.querySelectorAll(".lesson-container h2").forEach((title, index) => {
-        title.addEventListener("click", function () {
-            toggleLesson(index + 1);
+    
+        document.querySelectorAll(".lesson-container h2").forEach((title, index) => {
+            title.addEventListener("click", function () {
+                toggleLesson(index + 1);
+            });
         });
     });
-});
+    
+    function checkQuiz(lessonNumber) {
+    const quizContainer = document.getElementById(`quiz${lessonNumber}`);
+    const questions = quizContainer.querySelectorAll('.quiz-question');
+    let correctAnswers = 0;
+    let totalQuestions = questions.length;
 
+    questions.forEach((question, index) => {
+        const selectedOption = question.querySelector('input[type="radio"]:checked');
+        let resultText = question.querySelector(`.result-text-${index + 1}`);
 
+        if (!resultText) {
+            resultText = document.createElement('p');
+            resultText.className = `result-text-${index + 1}`;
+            resultText.style.marginTop = '10px';
+            resultText.style.fontWeight = 'bold';
+            question.appendChild(resultText);
+        }
 
-function checkQuiz(lessonNumber) {
-  const questions = document.querySelectorAll(`#lesson${lessonNumber} .quiz-question`);
-  let correctAnswers = 0;
-  let totalQuestions = questions.length;
+        if (selectedOption) {
+            if (selectedOption.value === "correct") {
+                resultText.textContent = "✅ Correct!";
+                resultText.style.color = 'green';
+                correctAnswers++;
+            } else {
+                resultText.textContent = "❌ Wrong answer. Try again!";
+                resultText.style.color = 'red';
+            }
+        } else {
+            resultText.textContent = "⚠️ Please select an option.";
+            resultText.style.color = 'orange';
+        }
+    });
 
-  questions.forEach((question, index) => {
-    const selectedOption = question.querySelector('input[type="radio"]:checked');
-    const resultText = question.querySelector(`.result-text-${index + 1}`) || document.createElement('span');
-
-    resultText.className = `result-text-${index + 1}`; 
-    resultText.style.display = 'inline-block'; 
-    resultText.style.marginLeft = '10px';
-
-    if (selectedOption) {
-      if (selectedOption.value === "correct") {
-        resultText.textContent = "Correct! Great job.";
-        resultText.style.color = 'green';
-        correctAnswers++;
-      } else {
-        resultText.textContent = "Wrong answer. Remember to review the lesson!";
-        resultText.style.color = 'red';
-      }
-    } else {
-      resultText.textContent = "Please select an option.";
-      resultText.style.color = 'orange';
+    let quizResult = quizContainer.querySelector('.quiz-result');
+    if (!quizResult) {
+        quizResult = document.createElement('p');
+        quizResult.className = 'quiz-result';
+        quizContainer.appendChild(quizResult);
     }
 
-    question.appendChild(resultText);
-  });
+    quizResult.textContent = `You answered ${correctAnswers} out of ${totalQuestions} questions correctly.`;
+    quizResult.style.color = correctAnswers === totalQuestions ? 'green' : 'red';
 
-  const quizResult = document.getElementById(`quizResult${lessonNumber}`);
-  quizResult.textContent = `You answered ${correctAnswers} out of ${totalQuestions} questions correctly.`;
-  quizResult.style.color = correctAnswers === totalQuestions ? 'green' : 'red';
+    // Hide quiz after 3 seconds
+    setTimeout(() => {
+        closeQuiz();
+    }, 3000);
 }
-
+    
 function toggleQuiz(quizNumber) {
-const quizSection = document.getElementById(`quiz${quizNumber}`);
-quizSection.classList.toggle('show');
-}
-function openQuiz(quizId) {
-    document.getElementById(quizId).classList.add('show');
-    document.querySelector('.quiz-overlay').classList.add('show');
-    document.body.classList.add('no-scroll');
+    document.querySelectorAll('.quiz').forEach(quiz => quiz.classList.remove('show'));
+    document.getElementById(`quiz${quizNumber}`).classList.add('show');
 }
 
+    
 function closeQuiz() {
-    const quizzes = document.querySelectorAll('.quiz');
-    quizzes.forEach(quiz => quiz.classList.remove('show'));
-
-    document.querySelector('.quiz-overlay').classList.remove('show');
-    document.body.classList.remove('no-scroll');
+    document.querySelectorAll('.quiz').forEach(quiz => {
+        quiz.classList.remove('show');
+    });
 }
-
-function goBack() {
-  window.history.back();
-}
-  </script>
-</body>
+    // Function to go back
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+  </body>
 </html>
