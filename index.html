@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>DigiLearn</title>
   <link rel="stylesheet" href="CAPSTONE.css">
 </head>
@@ -14,90 +14,66 @@
   </header>
 
   <!-- Main Content Section -->
-  <div class="container">
+  <section class="container">
     <h2>Welcome to DigiLearn!</h2>
-      <p>Enhance your English skills with clear, easy-to-follow text and audio lessons.</p>
-        <button onclick="scrollToLearningPaths()">Discover Learning Paths</button>
-  </div>
+    <p>Enhance your English skills with clear, easy-to-follow text and audio lessons.</p>
+  </section>
 
   <!-- Features Section -->
-  <div class="features">
+  <section class="features">
     <h3>Why DigiLearn?</h3>
-      <div class="features-container">
-
-        <div class="feature-card">
-          <h4>Listen and Learn</h4>
-            <p>Enhance your English skills by listening to audio lessons designed to improve your pronunciation and understanding.</p>
-        </div>
-        
-        <div class="feature-card">
-          <h4>Simple Yet Effective Lessons</h4>
-            <p>Explore straightforward text-based lessons that make learning English easy and enjoyable.</p>
-        </div>
-
-            <div class="feature-card">
-          <h4>Learn Anytime, Anywhere</h4>
-            <p>Access your lessons anytime to fit learning seamlessly into your busy schedule.</p>
-       </div>
-
+    <div class="features-container">
+      <div class="feature-card">
+        <h4>Listen and Learn</h4>
+        <p>Enhance your English skills by listening to audio lessons designed to improve your pronunciation and understanding.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Simple Yet Effective Lessons</h4>
+        <p>Explore straightforward text-based lessons that make learning English easy and enjoyable.</p>
+      </div>
+      <div class="feature-card">
+        <h4>Learn Anytime, Anywhere</h4>
+        <p>Access your lessons anytime to fit learning seamlessly into your busy schedule.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Learning Paths Section -->
-  <div id="learning-paths" class="learning-paths">
+  <section id="learning-paths" class="learning-paths">
     <h3>Choose Your Learning Path</h3>
     <div class="paths-container">
-
       <div class="path-card">
         <h4>Grammar</h4>
-          <p>Master English grammar rules and write with confidence!</p>
-            <button onclick="goToPath('grammar')">Unlock Lessons</button>
+        <p>Master English grammar rules and write with confidence!</p>
+        <button onclick="navigateTo('grammar.html')">Unlock Lessons</button>
       </div>
-
       <div class="path-card">
         <h4>Vocabulary</h4>
-         <p>Expand your vocabulary and express yourself more effectively!</p>
-            <button onclick="goToPath('vocabulary')">Unlock Lessons</button>
+        <p>Expand your vocabulary and express yourself more effectively!</p>
+        <button onclick="navigateTo('vocabulary.html')">Unlock Lessons</button>
       </div>
-
       <div class="path-card">
         <h4>Writing Skills</h4>
-          <p>Enhance your writing skills and become a better writer.</p>
-            <button onclick="goToPath('writing')">Unlock Lessons</button>
+        <p>Enhance your writing skills and become a better writer.</p>
+        <button onclick="navigateTo('writing.html')">Unlock Lessons</button>
       </div>
-      
     </div>
-  </div>
+  </section>
 
   <!-- Fun Facts Section -->
-  <div class="fun-facts">
+  <section class="fun-facts">
     <h3>Fun Fact</h3>
-      <p id="fact">Did you know? The longest word in English has 189,819 letters and it’s the chemical name for titin, a protein.</p>
-  </div>
+    <p id="fact">Did you know? The longest word in English has 189,819 letters and it’s the chemical name for titin, a protein.</p>
+  </section>
 
   <!-- Footer Section -->
   <footer>
-    <p>© 2025 DigiLearn. All rights reserved.</p>
+    <p>&copy; 2025 DigiLearn. All rights reserved.</p>
   </footer>
 
   <script>
-    function scrollToLearningPaths() {
-      document.getElementById("learning-paths").scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-
-    function goToPath(path) {
-      if (path === 'grammar') {
-        window.location.href = 'grammar.html';
-      } else if (path === 'vocabulary') {
-        window.location.href = 'vocabulary.html';
-      } else if (path === 'writing') {
-        window.location.href = 'writing.html';
-      } else {
-        alert('Path not available');
-      }
+  function navigateTo(url) {
+      window.location.href = url;
     }
   </script>
 </body>
