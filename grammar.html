@@ -471,41 +471,16 @@
 }
     
 function toggleQuiz(quizNumber) {
-    const quizSection = document.getElementById(`quiz${quizNumber}`);
-
-    if (quizSection.classList.contains('show')) {
-        quizSection.classList.remove('show');
-        quizSection.classList.add('hide');
-
-        // Wait for the fade-out animation to finish before fully hiding the quiz
-        setTimeout(() => {
-            quizSection.classList.remove('hide');
-        }, 500);
-    } else {
-        // Hide all other quizzes first
-        document.querySelectorAll('.quiz').forEach(quiz => {
-            quiz.classList.remove('show');
-            quiz.classList.add('hide');
-            setTimeout(() => {
-                quiz.classList.remove('hide');
-            }, 500);
-        });
-
-        // Show the selected quiz with fade-in effect
-        setTimeout(() => {
-            quizSection.classList.add('show');
-        }, 10);
-    }
+    document.querySelectorAll('.quiz').forEach(quiz => quiz.classList.remove('show'));
+    document.getElementById(`quiz${quizNumber}`).classList.add('show');
 }
+
     
 function closeQuiz() {
     document.querySelectorAll('.quiz').forEach(quiz => {
-        quiz.style.display = "none"; // Ensures quiz is fully hidden
         quiz.classList.remove('show');
     });
 }
-
-    
     // Function to go back
     function goBack() {
         window.history.back();
