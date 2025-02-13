@@ -164,7 +164,7 @@ footer {
 }
 
 .quiz-header {
-    position: sticky; /* ✅ Ensures X button does not move */
+    position: sticky;
     top: 0;
     padding: 10px;
     z-index: 1100;
@@ -180,7 +180,6 @@ footer {
 
 .quiz.hide {
     opacity: 0;
-    visibility: hidden;
     transform: translate(-50%, -50%) scale(0.95);
     transition: opacity 0.3s ease-in, transform 0.25s ease-in;
 }
