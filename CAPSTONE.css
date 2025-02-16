@@ -11,7 +11,10 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #415A77;
+    background-image: url("image/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #FFFFFF;
     padding: 45px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -44,14 +47,144 @@ button:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
+.title {
+    background-image: url("image/title.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-page {
+    -webkit-text-stroke: 2px #428DFF;
+}
+
+.subtitle-page {
+   font-style: italic;
+   position: relative;
+   bottom: 20px;
+   -webkit-text-stroke: 1px #428DFF;
+}
+
+.choose {
+    font-size: 2em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
 /* Sections Styling */
-.container, .features, .learning-paths, .fun-facts, .lesson-container, .quiz {
+.lesson-container, .quiz {
     background-color: #FFFFFF;
     border-radius: 12px;
     padding: 35px;
     margin: 25px auto;
     max-width: 900px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #1B263B;
+    font-size: 1em;
+}
+
+.container, .fun-facts {
+    background-color: aliceblue;
+    padding: 3%;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.welcome, .funfact {
+    font-size: 2em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-message, .fact {
+    font-style: italic;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.icon1 {
+    background-image: url("image/listen1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+}
+
+.icon2 {
+    background-image: url("image/simple1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+}
+
+.icon3 {
+    background-image: url("image/anywhere1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+}
+
+.icon4 {
+    background-image: url("image/fact.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    position: relative;
+    top: 30px;
+}
+
+.icon5 {
+    background-image: url("image/digilearn2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    position: relative;
+    top: 20px;
+}
+
+.icon6 {
+    background-image: url("image/digi.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 100px; 
+    height: 100px;
+    position: relative;
+    right: 170px;
+    top: 90px;
+}
+
+.fun-facts {
+    background-image: url("image/factbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.learning-paths {
+    background-image: url("image/paths.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #1B263B;
     font-size: 1em;
@@ -64,8 +197,11 @@ button:hover {
     gap: 18px;
 }
 
-.feature-card, .path-card {
-    background-color: #A8B5D3;
+.feature-card {
+    background-image: url("image/features.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 8px;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
     padding: 25px;
@@ -82,6 +218,23 @@ button:hover {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.path-card {
+    background-color: aliceblue;
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin: 15px auto;
+    width: 260px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1B263B;
+    font-weight: bold;
+    font-size: 1em;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 .feature-card:hover, .path-card:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
@@ -105,6 +258,10 @@ button:hover {
     transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
     padding: 0 15px;
+}
+
+.lesson-container {
+    background-color: aliceblue;
 }
 
 .lesson-container.active .lesson-content {
