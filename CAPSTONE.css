@@ -11,19 +11,22 @@ body {
 
 /* Header Styling */
 header {
-    background-image: url("image/header.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #FFFFFF;
+    background: rgba(27, 38, 59, 0.9); /* Strong navy blue, less transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    color: #E3EAF6; /* Light soft blue for contrast */
     padding: 45px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Softer glass-like border */
     border-radius: 0 0 40px 40px;
+    
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 3px;
     font-size: 1.8em;
     position: relative;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* Buttons */
@@ -167,13 +170,6 @@ button:hover {
     position: relative;
     right: 170px;
     top: 90px;
-}
-
-.fun-facts {
-    background-image: url("image/factbg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .learning-paths {
